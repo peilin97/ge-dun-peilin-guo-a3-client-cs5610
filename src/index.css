@@ -1,0 +1,28 @@
+.navbar {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    overflow: scroll;
+    background-color:rgb(200, 226, 158) ;
+    font-size: 25px;
+    float: left;
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 95%;
+    /* top:370px; */
+    /* padding: 24px 20px; */
+    /* margin: 60px; */
+    margin-top: 60px;
+    margin-left: 10px;
+    /* padding: 14px 20px; */
+    overflow-x: scroll;
+    overflow-y: scroll;
+  
+  }

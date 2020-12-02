@@ -36,7 +36,7 @@ export default class App extends React.Component {
                        urlList: [...this.state.urlList, urlPair]})
         // update 2D array
     })
-    .catch(error => console.log(error))
+    .catch(error => alert(error.response.data))
     .finally(() => this.setState(
         {
           originalURL: '',
@@ -68,10 +68,10 @@ export default class App extends React.Component {
 
           <button onClick={() => this.onSubmit()}>Shorten URL</button>
           <div>
-            {this.state.urlList.map(pair => 
+            {this.state.urlList.slice(0).reverse().map(pair => 
               
               <div className="printPairURL">
-                <span>{pair[0]}</span>
+                <span className="hideLongURL">{pair[0]}</span>
                 <span className="printShortenedURL">
                 &nbsp;&nbsp;&nbsp;&nbsp;
                   <a href={"https://a3-server-cs5610.herokuapp.com/url/"+pair[1]}>{pair[1]}</a>

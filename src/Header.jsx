@@ -15,11 +15,10 @@ export default function Header() {
     <Router>
         <div className="navbar">
           <h2>URL Shortener</h2>
-          <NavLink exact to="/">
+          <NavLink className="navPadding" exact to="/">
             Home
           </NavLink>
-          {'   '}
-          <NavLink exact to="/about">
+          <NavLink className="navPadding" exact to="/about">
             About
           </NavLink>
           <Search />

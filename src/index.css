@@ -5,7 +5,7 @@
     width: 100%;
     overflow: scroll;
     background-color:rgb(171, 212, 56) ;
-    font-size: 25px;
+    font-size: 30px;
     float: left;
     display: block;
     color: (189,183,107);
@@ -43,18 +43,20 @@
     border-radius: 4px;
     font-size: 19px;
     background-color: rgb(242, 247, 229);
-    padding: 12px 20px 12px 40px;
-    margin: 8px 0;
-    font-family: 'Open Sans'cursive;
-
-    /* transition: width 0.4s ease-in-out; */
+    padding: 12px 20px 12px 10px;
+    margin: 8px;
+    margin-left: 10px;
+    margin-bottom: 12px;
+    font-family: 'Open Sans',cursive;
   }
-  input[type=text]:focus {
-    width: 100%;
-  }
+  /* input:focus {
+    /* width: 100%; */
+    /* border: 2px solid #ccc; */
+    /* border: 2px solid red;
+  } */ */
 
   label{
-    font-size: 22px;
+    font-size: 32px;
     font-weight: bold;
   }
 
@@ -68,8 +70,6 @@
     margin-left: 10px;
     height: 45px;
     font-family: 'Open Sans';
-
-
   }
 
   button:hover {
@@ -79,11 +79,11 @@
   }
 
   .printPairURL{
-    width: 55%;
+    width: 50%;
     border: 2px solid #ccc;
     font-size: 20px;
     margin-top: 8px;
-    text-align: justify;
+    /* text-align: justify; */
     background-color:  rgb(243, 245, 240);
   }
 
@@ -101,15 +101,32 @@ a{
 
 #root {
   font-family: 'Open Sans', cursive;
+  font-size: 30px;
 }
 
 h2{
   text-align: center;
   font-size: 45px;
   font-weight: bolder;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 span{
   font-family: 'Open Sans';
+
+}
+
+.navPadding{
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+.hideLongURL{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 20%;
+  margin-right: 20px;
+  border: 2px solid red;
 
 }

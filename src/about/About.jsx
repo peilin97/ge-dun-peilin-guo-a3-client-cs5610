@@ -3,12 +3,11 @@ import Collapse from 'react-bootstrap/Collapse';
 import parse from 'html-react-parser';
 import './about.css';
 
-
 export default function About() {
     const questions = [
-        "What is a URL shortener?",
+        'What is a URL shortener?',
         'Want to customize your path ID?',
-        'Want to update your path ID\'s original URL?',
+        "Want to update your path ID's original URL?",
         'No longer want your path ID?',
     ];
     const answers = [
@@ -23,9 +22,9 @@ export default function About() {
         "<p>To update a shortened link's original URL, search the path ID in the header.\
         You could update it on its edit page.\
         </p>",
-        "<p>To delete a shortened link, search the path ID in the header.\
+        '<p>To delete a shortened link, search the path ID in the header.\
         You could delete it on its edit page.\
-        </p>",
+        </p>',
     ];
     const initialOpens = [];
     for (let i = 0; i < answers.length; i++) {
@@ -51,11 +50,10 @@ export default function About() {
                             aria-expanded={opens[id]}>
                             {parse(q)}
                         </button>
-                        <Collapse in={opens[id]} className="uniInstruction answer">
-                            <div
-                            id={id}>
-                                {parse(answers[id])}
-                            </div>
+                        <Collapse
+                            in={opens[id]}
+                            className="uniInstruction answer">
+                            <div id={id}>{parse(answers[id])}</div>
                         </Collapse>
                     </div>
                 );

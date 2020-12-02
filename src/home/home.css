@@ -71,8 +71,10 @@
 }
 
 .homeLabel {
+    font-weight: larger;
     height: 100%;
     width: 15%;
+    margin-right: 1%;
 }
 
 .homeInput {

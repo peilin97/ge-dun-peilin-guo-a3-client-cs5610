@@ -33,15 +33,15 @@ export default class App extends React.Component {
         this.setState({shortenedURL: res.data.shortened,
                        urlList: [...this.state.urlList, urlPair]})
         // update 2D array
-    })
-    .catch(error => alert(error.response.data))
-    .finally(() => this.setState(
+    }).then(
+      () => this.setState(
         {
           originalURL: '',
           shortenedURL: '',
         }    
       )
-    )   
+    )
+    .catch(error => alert(error.response.data)) 
   }
 
   // ============================RENDER=====================================
@@ -51,7 +51,7 @@ export default class App extends React.Component {
           <form className="homeForm">
             <label
               htmlFor="original"
-              className="homeLabel">
+              className="homeLabel boldFont">
                 Original URL
             </label>
             <input
@@ -65,7 +65,7 @@ export default class App extends React.Component {
           <form className="homeForm">
             <label
               htmlFor="branded"
-              className="homeLabel">
+              className="homeLabel boldFont">
                 Branded URL
             </label>
             <input

@@ -87,7 +87,7 @@ export default class App extends React.Component {
             {this.state.urlList.slice(0).reverse().map(pair =>
               <div className="flexRow shortenedLinksListItem">
                 <span className="hideLongURL">{pair[0]}</span>
-                <span className="printShortenedURL">
+                <span className="boldFont">
                 &nbsp;&nbsp;&nbsp;&nbsp;
                   <a href={"https://a3-server-cs5610.herokuapp.com/url/"+pair[1]}>{pair[1]}</a>
                 </span>

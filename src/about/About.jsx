@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
 import parse from 'html-react-parser';
 import './about.css';
@@ -41,21 +40,19 @@ export default function About() {
     };
 
     return (
-        <div className="customJumbotron instruction">
+        <div className="customContainer aboutContainer">
             {questions.map(function (q, id) {
                 return (
-                    <div className="instructionItem">
-                        <Button
-                            variant="light"
+                    <div className="aboutItem">
+                        <button
                             className="uniInstruction instructionButton"
                             onClick={() => handleOpen(id)}
                             aria-controls={id}
                             aria-expanded={opens[id]}>
                             {parse(q)}
-                        </Button>
-                        <Collapse in={opens[id]} className="uniInstruction">
+                        </button>
+                        <Collapse in={opens[id]} className="uniInstruction answer">
                             <div
-                            className="answer"
                             id={id}>
                                 {parse(answers[id])}
                             </div>

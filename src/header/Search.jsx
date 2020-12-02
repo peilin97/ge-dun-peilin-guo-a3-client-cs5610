@@ -38,7 +38,6 @@ export default function Search() {
         <button className = "searchButton">
           <FontAwesomeIcon icon={faSearch} onClick={onSearch} />
         </button>
-        {/* <button onClick={onSearch}>Search</button> */}
     </div>
   )
 }

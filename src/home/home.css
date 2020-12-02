@@ -52,15 +52,7 @@
     border: 2px solid #ccc;
     font-size: 20px;
     margin-top: 8px;
-    /* text-align: justify; */
     background-color:  rgb(243, 245, 240);
-}
-
-.printShortenedURL{
-    /* color:rgb(89, 122, 58); */
-    font-weight: bold;
-    /* font-size: 23px; */
-    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .hideLongURL{
@@ -68,8 +60,6 @@
     overflow: hidden;
     white-space: nowrap;
     width: 50%;
-    /* margin-right: 20px; */
-    /* border: 2px solid red; */
 }
 
 .copyButton {

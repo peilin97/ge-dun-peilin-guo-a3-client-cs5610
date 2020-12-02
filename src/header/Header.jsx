@@ -11,27 +11,11 @@ export default function Header() {
 
   return (
     <Router>
-      <div
-        bg="light"
-        variant="light"
-        fixed="top"
-        className="justify-content-betweens flexRow navbar">
+      <div className="navbar flexRow">
         <a href='/' className="navbarItem smallerText">URL Shortener</a>
         <Search />
         <a href='/about' className="navbarItem smallerText">About</a>
-        {/* <div className="navbar"> */}
-          {/* <h2>URL Shortener</h2> */}
-          {/* <NavLink className="navPadding" exact to="/">
-            URL Shortener
-          </NavLink> */}
-          {/* <Navbar.Brand href='/'>URL Shortener</Navbar.Brand>
-          <Search />
-          <Navbar.Brand href='/about'>About</Navbar.Brand> */}
-          {/* <NavLink className="navPadding" exact to="/about">
-            About
-          </NavLink> */}
-        {/* </div> */}
-        </div>
+      </div>
         <Switch>
           <Route exact
             path="/url/:shortenedURL/edit"

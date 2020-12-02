@@ -47,7 +47,7 @@ export default class App extends React.Component {
   // ============================RENDER=====================================
   render(){
     return(
-        <div className="homeContainer customContainer">
+        <div className="homeContainer flexColumn customContainer">
           <form className="homeForm">
             <label
               htmlFor="original"

@@ -23,7 +23,6 @@ export default function Search() {
     })
     .catch(err => {
       alert(err.response.data);
-      // console.dir(err.response.data);
     });
   }
 

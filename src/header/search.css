@@ -7,19 +7,5 @@
 }
 
 .searchInput {
-    /* border: 2px solid #4CAF50; */
     border-right: 0;
-    /* width: 80%; */
-    /* height: 60%; */
-    /* margin: 0; */
-    /* color: rgb(89, 122, 58); */
-    /* border-radius: 0; */
 }
-
-/* .searchButton {
-    margin: 0;
-    height: 60%;
-    color: rgb(89, 122, 58);
-    cursor: pointer;
-    border-radius: 0;
-} */
